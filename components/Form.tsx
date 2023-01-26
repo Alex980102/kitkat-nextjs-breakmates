@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Formik, Field } from "formik";
 import {
+  Center,
   HStack,
   Image,
   InputGroup,
@@ -89,7 +90,8 @@ export default function App() {
                     <InputRightElement pointerEvents="none"></InputRightElement> 
                   </InputGroup> */}
                   <Box style={{ touchAction: "manipulation" }}>
-                    <InputGroup variant="custom" colorScheme="red">
+                  <Center>
+                  <InputGroup variant="custom" colorScheme="red" maxWidth={"3xl"}>
                       <Field
                       style={{ touchAction: 'manipulation', }}
                         type={"text"}
@@ -106,11 +108,13 @@ export default function App() {
                           type="submit"
                           w={"100%"}
                           rounded={"full"}
+                          colorScheme='#FF004F'
                         >
                           Crear
                         </Button>
                       </InputRightElement>
                     </InputGroup>
+                  </Center>
                   </Box>
                 </FormControl>
               </HStack>

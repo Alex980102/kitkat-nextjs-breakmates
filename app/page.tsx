@@ -6,6 +6,7 @@ import MyForm from "@/components/Form";
 import MInputs from "@/components/Minputs";
 import { Box, SimpleGrid, GridItem, Icon, IconButton, Input, InputGroup, InputLeftAddon, InputRightElement, useColorMode } from "@chakra-ui/react";
 import { FaMoon, FaSun, FaPhone } from "react-icons/fa";
+import Carrusel from "@/components/Carrusel";
 
 export default function Home() {
   const { toggleColorMode, colorMode } = useColorMode();
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <BreakMatesHead />
       <Inspirate />
+      <Carrusel />
       <MyForm />
     </>
   );
